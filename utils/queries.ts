@@ -1,4 +1,5 @@
 export const allPostsQuery = () => {
+  //fetch all from a type equals to post, in the order of created at descending. the newest one is gonna be on the top. Fetch the followinging, id...userid..comments...then return to the query
   const query = `*[_type == "post"] | order(_createdAt desc){
     _id,
      caption,

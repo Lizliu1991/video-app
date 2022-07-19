@@ -5,7 +5,7 @@ import { topics } from '../utils/constants'
 
 const Discover = () => {
 
-  //find out which link is clicked to implement active topic  style
+  //find out which link is clicked to implement active topic  style using data inside url
   const router = useRouter()
   const { topic } = router.query;
 
