@@ -10,6 +10,7 @@ import { GoVerified } from 'react-icons/go'
 
 
 
+
 interface IProps {
     post: Video;
 }
@@ -72,7 +73,8 @@ setPlaying(true)
                     onMouseEnter={() => setIsHover(true)}
                     onMouseLeave={() => setIsHover(false)}
                     className='rounded-3xl'>
-                    <Link href="/">
+                        {/* dynamic routing */}
+                    <Link href={`/detail/${post._id}`}>
                         <video
                             loop
                             ref={videoRef}
